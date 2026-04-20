@@ -18,5 +18,7 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
-      - name: Build using Maven
-        run: mvn clean install -DskipTests
+      
+- name: Build using Maven
+  run: mvn clean install -DskipTests
+  working-directory: demo
