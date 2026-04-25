@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+=======
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+>>>>>>> dac27eb9e9891bd253a6aafd24fd421539939ab6
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example</groupId>
@@ -9,6 +16,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>demo</name>
+<<<<<<< HEAD
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -18,15 +26,32 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
+=======
+  <url>http://www.example.com</url>
+
+  <!-- FIXED: Java version aligned with CI -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
+
+  <!-- UPDATED: Stable dependency -->
+>>>>>>> dac27eb9e9891bd253a6aafd24fd421539939ab6
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
+<<<<<<< HEAD
       <version>4.11</version>
+=======
+      <version>4.13.2</version>
+>>>>>>> dac27eb9e9891bd253a6aafd24fd421539939ab6
       <scope>test</scope>
     </dependency>
   </dependencies>
 
+<<<<<<< HEAD
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -72,4 +97,6 @@
       </plugins>
     </pluginManagement>
   </build>
+=======
+>>>>>>> dac27eb9e9891bd253a6aafd24fd421539939ab6
 </project>

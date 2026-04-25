@@ -2,13 +2,18 @@ name: Java CI/CD Pipeline
 
 on:
   push:
+<<<<<<< HEAD
     branches: [ "main" ]
+=======
+    branches: ["main"]
+>>>>>>> dac27eb9e9891bd253a6aafd24fd421539939ab6
 
 jobs:
   build:
     runs-on: windows-latest
 
     steps:
+<<<<<<< HEAD
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -21,3 +26,17 @@ jobs:
       - name: Build with Maven
         working-directory: demo
         run: mvn clean install
+=======
+      - name: Checkout Code
+        uses: actions/checkout@v4    
+
+      - name: Setup Java
+        uses: actions/setup-java@v4    
+        with: 
+          distribution: 'temurin' 
+          java-version: '11' 
+
+      - name: Build using Maven 
+        run: mvn clean install -DskipTests
+        working-directory: demo
+>>>>>>> dac27eb9e9891bd253a6aafd24fd421539939ab6
